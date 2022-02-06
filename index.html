@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Game JavaScript</title>
+    <style>
+        body{
+            background-color: #F9CDAD;
+        }
+        #pong{
+            border: 2px solid #FFF;
+            position: absolute;
+            left:100px;
+            top: 150px;
+        }
+        #info{
+            position: absolute;
+            border: 2px solid #FFF;
+            left:1450px;
+            top: 150px;
+        }
+        #words{
+            position: absolute;
+            border: 2px solid #FFF;
+            left:1450px;
+            top: 150px;
+            background: moccasin;
+        }
+        #output{
+          position: absolute;
+          left: 120px;
+          top: 100;
+          font-size: 50px;
+        }
+        #one{
+          position: absolute;
+          left: 1475px;
+          top: 87.5px;
+          font-size: 125px;
+        }
+        #two{
+          position: absolute;
+          left: 1475px;
+          top: 262.5px;
+          font-size: 125px;
+        }
+        #three{
+          position: absolute;
+          left: 1475px;
+          top: 437.5px;
+          font-size: 125px;
+        }
+        #four{
+          position: absolute;
+          left: 1475px;
+          top: 612.5px;
+          font-size: 125px;
+        }
+        #speed{
+            position: absolute;
+            left: 1700px;
+            top: 0px;
+            font-size: 50px;
+        }
+        #wordInput {
+            position:absolute;
+            text-align:center;
+            left:750px;
+            top:950px;
+            font-size: 50px;
+            height: 75px;
+            width: 750px;
+        }
+        button {
+          position: absolute;
+          text-align: right;
+          top: 50;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+   <canvas id="pong" width="1350" height="700"></canvas>
+
+   <canvas id="words" width="750" height="700"> </canvas>
+    
+
+  <h1 id="output"> Score: </h1>
+  
+  <h1 id="one"> A </h1>
+  <h1 id="two"> C </h1>
+  <h1 id="three"> B </h1>
+  <h1 id="four"> D </h1>
+
+  <h1 id="speed"></h1>
+  <input type="text" id="wordInput" value="" onClick="refreshWord()">
+
+  <a href="file:///Users/diwakarkumawat/wordPong2/help.html">
+    <button>Instructions</button>
+  </a>
+   <script src="pong.js"></script>
+
+</body>
+</html>
